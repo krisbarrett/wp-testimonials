@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Testimonials
-Plugin URI: https://krisbarrett@github.com/krisbarrett/wp_testimonials.git
+Plugin URI: https://krisbarrett@github.com/krisbarrett/wp_testimonials
 Description: Inserts a testimonials form at the end of a user specified page.
 Version: 0.1.0
 Author: Kris Barrett
