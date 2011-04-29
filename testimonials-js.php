@@ -1,3 +1,4 @@
+
 <?php
 	require 'testimonials-options.php';
 	$options = load_options();

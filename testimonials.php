@@ -27,7 +27,7 @@ function testimonials_form($content) {
 		<br/>
 		<label for="name" id="name">Name: </label><br/>
 		<input type="text" name="name" id="name" size="30"><br/>
-		<br/
+		<br/>
 		<label for="email" id="email">Email: </label><br/>
 		<input type="text" name="email" id="email" size="30"><br/>
 		<br/>
