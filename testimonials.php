@@ -56,4 +56,44 @@ function include_js() {
 
 add_action( 'init', 'include_js');
 
+add_action('admin_init', 'kb_testimonials_options_init' );
+add_action('admin_menu', 'kb_testimonials_add_page');
+
+// Init plugin options to white list our options
+function kb_testimonials_options_init(){
+        register_setting( 'kb_testimonials_options', 'options');
+}
+
+// Add menu page
+function kb_testimonials_add_page () {
+        add_options_page('Testimonials Options', 'Testimonials', 'manage_options', 'kb_testimonials_options', 'kb_testimonials_options_do_page');
+}
+
+// Draw the menu page itself
+function kb_testimonials_options_do_page() {
+        ?>
+        <div class="wrap">
+                <h2>Testimonials Options</h2>
+                <form method="post" action="options.php">
+                        <?php settings_fields('kb_testimonials_options'); ?>
+                        <?php $options = get_option('options'); ?>
+                        <table class="form-table">
+                                <tr valign="top"><th scope="row">Page ID</th>
+                                        <td><input type="text" name="options[page_id]" value="<?php echo $options['page_id']; ?>" /></td>
+                                </tr>
+ <tr valign="top"><th scope="row">Email</th>
+                                        <td><input type="text" name="options[email]" value="<?php echo $options['email']; ?>" /></td>
+                                </tr>
+ </tr>
+ <tr valign="top"><th scope="row">Domain</th>
+                                        <td><input type="text" name="options[domain]" value="<?php echo $options['domain']; ?>" /></td>
+                                </tr>                        
+</table>
+                        <p class="submit">
+                        <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
+                        </p>
+                </form>
+        </div>
+        <?php
+}
 ?>
