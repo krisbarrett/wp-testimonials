@@ -12,9 +12,9 @@ Creative Commons Attribution-ShareAlike 3.0 (http://creativecommons.org/licenses
 
 Installation
 
-1. Copy the plugin files to wp-content/plugins/wp_testimonials.
-2. Set the page id, email address, and domain name in testimonials-options.php.example.
-3. Rename testimonials-options.php.example to testimonials-options.php.example.
+1. Copy the plugin files to wp-content/plugins/wp-testimonials.
+2. Copy testimonials-options.php.example to testimonials-options.php.
+3. Set the page id, email address, and domain name in testimonials-options.php.
 4. Activate the plugin from wp-admin.
 
 Known Issues
