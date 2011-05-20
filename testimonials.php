@@ -3,7 +3,7 @@
 Plugin Name: Testimonials
 Plugin URI: https://krisbarrett@github.com/krisbarrett/wp_testimonials
 Description: Inserts a testimonials form at the end of a user specified page.
-Version: 0.1.0
+Version: 0.1.1
 Author: Kris Barrett
 Author URI: http://www.krisbarrett.com
 License: GPL
@@ -25,13 +25,13 @@ function testimonials_form($content) {
 		<form method="post" id="testimonials">
 		Your email will not be published.<br/>
 		<br/>
-		<label for="name" id="name">Name: </label><br/>
+		<label for="name" id="name_label">Name: </label><br/>
 		<input type="text" name="name" id="name" size="30"><br/>
 		<br/>
-		<label for="email" id="email">Email: </label><br/>
+		<label for="email" id="email_label">Email: </label><br/>
 		<input type="text" name="email" id="email" size="30"><br/>
 		<br/>
-		<label for="testimonial" id="testimonial">Testimonial: </label><br/>
+		<label for="testimonial" id="testimonial_label">Testimonial: </label><br/>
 		<textarea name="testimonial" id="testimonial" cols="40" rows="10">
 </textarea><br/>
 		<br/>

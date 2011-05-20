@@ -1,4 +1,4 @@
-About - Version 0.1.0
+About - Version 0.1.1
 
 wp_testimonials is a Wordpress plugin that creates a testimonials form on a specified page.  When a client submits a testimonial, it is sent to the specified email address.  Right now, an administrator has to manually update the testimonials page with the client's testimonial.
 
@@ -20,4 +20,3 @@ Installation
 Known Issues
 
 1. Updating the plugin from wp-admin installs a different testimonials plugin from the Wordpress plugins database.
-2. Testimonials form does not work with Internet Explorer.
